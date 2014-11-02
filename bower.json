@@ -1,0 +1,7 @@
+{
+  "name": "norrmalm",
+  "dependencies": {
+    "bootstrap": "~3.3.0"
+  },
+  "private": true
+}

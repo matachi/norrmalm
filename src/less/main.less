@@ -1,0 +1,114 @@
+@bootstrap-less: '../../bower_components/bootstrap/less/';
+
+// Core variables and mixins
+@import "@{bootstrap-less}variables.less";
+@import "@{bootstrap-less}mixins.less";
+
+// Reset and dependencies
+@import "@{bootstrap-less}normalize.less";
+@import "@{bootstrap-less}print.less";
+//@import "@{bootstrap-less}glyphicons.less";
+
+// Core CSS
+@import "@{bootstrap-less}scaffolding.less";
+@import "@{bootstrap-less}type.less";
+@import "@{bootstrap-less}code.less";
+@import "@{bootstrap-less}grid.less";
+//@import "@{bootstrap-less}tables.less";
+@import "@{bootstrap-less}forms.less";
+//@import "@{bootstrap-less}buttons.less";
+
+// Components
+@import "@{bootstrap-less}component-animations.less";
+//@import "@{bootstrap-less}dropdowns.less";
+//@import "@{bootstrap-less}button-groups.less";
+//@import "@{bootstrap-less}input-groups.less";
+@import "@{bootstrap-less}navs.less";
+@import "@{bootstrap-less}navbar.less";
+//@import "@{bootstrap-less}breadcrumbs.less";
+//@import "@{bootstrap-less}pagination.less";
+//@import "@{bootstrap-less}pager.less";
+//@import "@{bootstrap-less}labels.less";
+//@import "@{bootstrap-less}badges.less";
+//@import "@{bootstrap-less}jumbotron.less";
+//@import "@{bootstrap-less}thumbnails.less";
+//@import "@{bootstrap-less}alerts.less";
+//@import "@{bootstrap-less}progress-bars.less";
+//@import "@{bootstrap-less}media.less";
+//@import "@{bootstrap-less}list-group.less";
+//@import "@{bootstrap-less}panels.less";
+//@import "@{bootstrap-less}responsive-embed.less";
+//@import "@{bootstrap-less}wells.less";
+//@import "@{bootstrap-less}close.less";
+
+// Components w/ JavaScript
+//@import "@{bootstrap-less}modals.less";
+//@import "@{bootstrap-less}tooltip.less";
+//@import "@{bootstrap-less}popovers.less";
+//@import "@{bootstrap-less}carousel.less";
+
+// Utility classes
+@import "@{bootstrap-less}utilities.less";
+@import "@{bootstrap-less}responsive-utilities.less";
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 65%);
+@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+
+@brand-primary:         #00f3f9;
+@brand-success:         #00fe00;
+@brand-info:            #e120f0;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #ff016d;
+
+@body-bg:     #060606;
+@text-color:  @gray-lighter;
+
+@link-color: @brand-primary;
+@link-hover-color: @link-color;
+@link-hover-decoration: underline;
+
+@font-family-monospace: "Anonymous Pro", monospace;
+@font-family-base: @font-family-monospace;
+
+@navbar-default-color: @text-color;
+@navbar-default-bg: @body-bg;
+@navbar-default-border: @gray-dark;
+
+@navbar-default-link-color: @gray-light;
+@navbar-default-link-hover-color: #fff;
+@navbar-default-link-active-color: #fff;
+
+@navbar-default-brand-color: #fff;
+@navbar-default-brand-hover-color: #fff;
+
+@navbar-default-toggle-hover-bg: @gray-dark;
+@navbar-default-toggle-icon-bar-bg: #ccc;
+@navbar-default-toggle-border-color: @gray-dark;
+
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.site-footer {
+  color: @gray-light;
+  margin-top: 50px;
+}
+
+.post-info {
+  border-bottom: 1px solid @gray-darker;
+  color: @gray-lighter;
+  font-size: @font-size-base - 1;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  p {
+    margin: 0;
+  }
+  address {
+    margin-bottom: 0;
+  }
+}
