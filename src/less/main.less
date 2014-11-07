@@ -71,8 +71,11 @@
 @link-hover-color: @link-color;
 @link-hover-decoration: underline;
 
-@font-family-monospace: "Anonymous Pro", monospace;
-@font-family-base: @font-family-monospace;
+@font-family-sans-serif: "Open Sans", sans-serif;
+/*@font-family-monospace: monospace;*/
+/*@font-family-base: @font-family-monospace;*/
+
+/*@font-size-base: 16px;*/
 
 @navbar-default-color: @text-color;
 @navbar-default-bg: @body-bg;
@@ -90,8 +93,21 @@
 @navbar-default-toggle-border-color: @gray-dark;
 
 body {
-  padding-top: 70px;
   padding-bottom: 30px;
+}
+
+#content {
+  word-wrap: break-word;
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  td.label {
+    width: 35px;
+    + td {
+      width: 100%;
+    }
+  }
 }
 
 .site-footer {
