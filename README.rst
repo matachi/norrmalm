@@ -2,7 +2,10 @@
 Norrmalm
 ========
 
-Dark `Pelican <http://getpelican.com>`_ theme.
+Simple and light `Pelican <http://getpelican.com>`_ theme.
+
+| Author: Daniel Jonsson
+| License: `MIT License <LICENSE>`_
 
 Prerequisites
 +++++++++++++
