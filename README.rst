@@ -45,3 +45,29 @@ Continuously build the theme when file changes are detected:
   $ gulp
 
 Useful when doing development.
+
+Template settings
++++++++++++++++++
+
+* :code:`DISPLAY_PAGES_ON_MENU`. Display pages in the menu.
+* :code:`FOOTER_CONTENT`. The site footer's content.
+
+Credits
++++++++
+
+Framework:
+
+* `Bootstrap <http://getbootstrap.com/>`_
+
+Background image:
+
+* `Grilled noise <http://subtlepatterns.com/grilled-noise/>`_
+
+Fonts:
+
+* `Fugaz One <https://www.google.com/fonts/specimen/Fugaz+One>`_
+* `Vollkorn <https://www.google.com/fonts/specimen/Vollkorn>`_
+
+Icons:
+
+* `Font Awesome <https://fortawesome.github.io/Font-Awesome/>`_
