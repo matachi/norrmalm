@@ -58,42 +58,45 @@
 @gray-light:             lighten(@gray-base, 65%);
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #00f3f9;
-@brand-success:         #00fe00;
-@brand-info:            #e120f0;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #ff016d;
+@brand-primary:         #c31;
+/*@brand-success:         #00fe00;*/
+/*@brand-info:            #e120f0;*/
+/*@brand-warning:         #f0ad4e;*/
+/*@brand-danger:          #ff016d;*/
 
-@body-bg:     #060606;
-@text-color:  @gray-lighter;
+@body-bg:     #fff;
+@text-color:  @gray-dark;
 
 @link-color: @brand-primary;
 @link-hover-color: @link-color;
 @link-hover-decoration: underline;
 
-@font-family-sans-serif: "Open Sans", sans-serif;
-/*@font-family-monospace: monospace;*/
-/*@font-family-base: @font-family-monospace;*/
+@font-family-sans-serif: "Vollkorn", sans-serif;
 
-/*@font-size-base: 16px;*/
+@font-size-base: 16px;
+
+@headings-font-family: "Fugaz One", cursive;
+@headings-font-weight: 400;
+@headings-color: @gray;
 
 @navbar-default-color: @text-color;
-@navbar-default-bg: @body-bg;
-@navbar-default-border: @gray-dark;
+@navbar-default-bg: #fcfcfc;
+@navbar-default-border: @gray-light;
 
-@navbar-default-link-color: @gray-light;
-@navbar-default-link-hover-color: #fff;
-@navbar-default-link-active-color: #fff;
+@navbar-default-link-color: @gray;
+@navbar-default-link-hover-color: @gray-darker;
+@navbar-default-link-active-color: @gray-darker;
 
-@navbar-default-brand-color: #fff;
-@navbar-default-brand-hover-color: #fff;
+@navbar-default-brand-color: @gray-darker;
+@navbar-default-brand-hover-color: @gray-darker;
 
 @navbar-default-toggle-hover-bg: @gray-dark;
 @navbar-default-toggle-icon-bar-bg: #ccc;
 @navbar-default-toggle-border-color: @gray-dark;
 
 body {
-  padding-bottom: 30px;
+  background-image: url('../images/grilled.png');
+  padding-bottom: 75px;
 }
 
 #content {
@@ -111,13 +114,13 @@ body {
 }
 
 .site-footer {
-  color: @gray-light;
+  color: @gray;
   margin-top: 50px;
 }
 
 .post-info {
-  border-bottom: 1px solid @gray-darker;
-  color: @gray-lighter;
+  border-bottom: 1px solid @gray-light;
+  color: @gray;
   font-size: @font-size-base - 1;
   margin-bottom: 20px;
   padding-bottom: 10px;
@@ -127,4 +130,8 @@ body {
   address {
     margin-bottom: 0;
   }
+}
+
+.align-center {
+  margin: 0 auto;
 }

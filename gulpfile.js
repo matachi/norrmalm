@@ -18,6 +18,11 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./dist/static/js'));
 });
 
+gulp.task('img', function() {
+  return gulp.src('./src/images/*')
+    .pipe(gulp.dest('./dist/static/images'));
+});
+
 gulp.task('templates', function() {
   return gulp.src('./src/templates/**')
     .pipe(gulp.dest('./dist/templates'));
@@ -25,12 +30,14 @@ gulp.task('templates', function() {
 
 gulp.task('watch', function() {
   gulp.watch('src/less/*.less', ['css']);
+  gulp.watch('src/images/*', ['img']);
   gulp.watch('src/templates/**', ['templates']);
 });
 
 gulp.task('default', [
   'js',
   'css',
+  'img',
   'templates',
   'watch',
 ]);
