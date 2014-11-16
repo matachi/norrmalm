@@ -10,23 +10,38 @@ Simple and light `Pelican <http://getpelican.com>`_ theme.
 Prerequisites
 +++++++++++++
 
-Tools necessary to build the theme.
+Instructions to install tools necessary to build the theme:
 
 .. code:: shell
 
-  sudo yum install nodejs npm # Install nodejs and npm on Fedora
-  sudo npm install -g gulp # Install gulp
+  $ sudo yum install nodejs npm # Install nodejs and npm on Fedora
+  $ sudo npm install -g gulp # Install gulp
 
 Setup
 +++++
 
+Install dependencies that gulp needs to build the theme:
+
 .. code:: shell
 
-  npm install
+  $ npm install
 
 Build
 +++++
 
+Use gulp to build the theme:
+
 .. code:: shell
 
-  gulp build
+  $ gulp build
+
+Development
++++++++++++
+
+Continuously build the theme when file changes are detected:
+
+.. code:: shell
+
+  $ gulp
+
+Useful when doing development.
