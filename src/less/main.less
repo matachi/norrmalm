@@ -16,7 +16,7 @@
 @import "@{bootstrap-less}grid.less";
 //@import "@{bootstrap-less}tables.less";
 @import "@{bootstrap-less}forms.less";
-//@import "@{bootstrap-less}buttons.less";
+@import "@{bootstrap-less}buttons.less";
 
 // Components
 @import "@{bootstrap-less}component-animations.less";
@@ -92,11 +92,17 @@
 
 @navbar-default-toggle-hover-bg: @gray-dark;
 @navbar-default-toggle-icon-bar-bg: #ccc;
-@navbar-default-toggle-border-color: @gray-dark;
+@navbar-default-toggle-border-color: @gray-light;
 
 body {
   background-image: url('../images/grilled.png');
   padding-bottom: 75px;
+}
+
+@media (min-width: @screen-sm-min) {
+  .navbar-form .form-control[type=text] {
+    width: 150px;
+  }
 }
 
 #content {

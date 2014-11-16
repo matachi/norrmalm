@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fugaz+One|Vollkorn:400,700,400italic,700italic">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fugaz+One">
   <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
   {% if FEED_ALL_ATOM %}
@@ -22,16 +23,16 @@
   <div class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        {#<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>#}
+        </button>
         <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
       </div>
-      {#<div class="navbar-collapse collapse">
-        {% if DISPLAY_PAGES_ON_MENU %}
+      <div class="navbar-collapse collapse">
+        {% if DISPLAY_PAGES_ON_MENU and PAGES|length %}
           <ul class="nav navbar-nav">
             {% for pg in PAGES %}
               <li{% if pg == page%} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
@@ -39,7 +40,7 @@
           </ul>
         {% endif %}
         <form class="navbar-form navbar-right" action="https://duckduckgo.com" name="f" method="get" role="search">
-          <input type="hidden" value="example.com" name="sites">
+          <input type="hidden" value="{{ SITEURL }}" name="sites">
           <div class="form-group">
             <input type="text" name="q" class="form-control" placeholder="Search">
           </div>
@@ -47,7 +48,7 @@
             <i class="fa fa-search"></i>
           </button>
         </form>
-      </div>#}
+      </div>
     </div>
   </div>
 
