@@ -45,4 +45,6 @@ gulp.task('default', [
 gulp.task('build', [
   'js',
   'css',
+  'img',
+  'templates',
 ]);
